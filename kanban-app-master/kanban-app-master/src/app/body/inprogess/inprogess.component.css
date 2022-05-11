@@ -1,0 +1,86 @@
+body {
+  font-family: "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+}
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.todo-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.create-btn {
+  /* padding: 3px; */
+  margin: 5px;
+  width: 55px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: lightblue;
+  color: black;
+}
+.all-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notes-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(93, 181, 199);
+}
+.notes-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(86, 76, 76);
+  padding: 10px;
+  flex-direction: column;
+}
+.todo-task-options {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  /* justify-content: flex-start; */
+  /* justify-content: space-evenly; */
+}
+.task-label {
+  padding: 5px;
+  /* border: 1px solid grey; */
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+}
+.user-details {
+  justify-self: flex-start;
+}
+.notes-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.todo-user-options {
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  border: 1px solid gray;
+}
+.user-icons {
+  margin: 5px;
+  cursor: pointer;
+}
+.user-icons:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+  border-radius: 50%;
+  /* background-color: grey; */
+}

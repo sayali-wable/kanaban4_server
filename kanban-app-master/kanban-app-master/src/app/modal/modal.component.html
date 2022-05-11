@@ -1,0 +1,67 @@
+<!-- <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Create</button> -->
+
+<!-- <input
+              type="text"
+              ngModel
+              name="task_title"
+              #task_title="ngModel"
+              class="form-control"
+              id="task_title"
+              placeholder="Enter Task Title"
+              required
+            />
+ -->
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #myform="ngForm">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input type="text" ngModel name="title" #title="ngModel" required
+              class="form-control" placeholder="Title" id="title" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Content</label>
+            <input type="email" ngModel name="content" #content="ngModel" required
+              class="form-control" placeholder="Content" id="content">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">User Name </label>
+            <input type="number" ngModel name="username" #username="ngModel" required
+              class="form-control" placeholder="Assignee" id="username">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Priority</label>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" ngModel name="priority" #priority="ngModel" required type="checkbox"
+                id="priority" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Low Or high</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Date</label>
+            <input type="date" name="date" ngModel #date="ngModel" required
+              class="form-control" placeholder="Restaurent Services" id="date">
+          </div>
+
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" (click)="addPost(myform)" class="btn btn-primary">Add Deatils</button>
+      </div>
+    </div>
+  </div>
+</div>
